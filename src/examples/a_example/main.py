@@ -10,3 +10,7 @@ print(result)
 #Print a builtin python function can be used to 
 
 devprocess.hello()
+
+secRes = devprocess.subtract_numbers(5, 5)
+
+print(secRes)
