@@ -3,14 +3,11 @@ import devprocess
 
 #"#" is used to denote a line that the 
 #Variable result stores the numbers used by devprocess module's add_numbers function
-result = devprocess.add_numbers(5, 5)
+value1 = input("Enter a number: ")
+value2 = input("Enter a second number: ")
 
-print(result)
+result_ad = devprocess.add_numbers(int(value1), int(value2))
+result_sb = devprocess.subtract_numbers(int(value1), int(value2))
 
-#Print a builtin python function can be used to 
+print(result_ad, result_sb)
 
-devprocess.hello()
-
-secRes = devprocess.subtract_numbers(5, 5)
-
-print(secRes)

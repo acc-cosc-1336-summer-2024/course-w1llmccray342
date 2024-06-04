@@ -1,7 +1,6 @@
 import unittest
 
-from src.examples.b_input_proc_output.input_process_output import test_config
-from src.examples.b_input_proc_output.input_process_output import echo_number_decimal, echo_number_whole, echo_string
+from src.examples.b_input_proc_output.input_process_output import echo_number_decimal, echo_number_whole, echo_string, test_config
 
 class Test_Config(unittest.TestCase):
 
@@ -13,7 +12,7 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(100.5, echo_number_whole(100.5))
 
     def test_echo_number_dec(self):
-        self.assertEqual(10.5, echo_number_decimal)
+        self.assertEqual(10.5, echo_number_decimal(10.5))
 
-    def test_echostring(self):
+    def test_echo_string(self):
         self.assertEqual("Python", echo_string("Python"))
