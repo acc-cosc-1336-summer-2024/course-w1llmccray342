@@ -10,3 +10,6 @@ string = input_process_output.echo_string("Python")
 print(string)
 
 input_process_output.display_output()
+
+
+print (6/3)
