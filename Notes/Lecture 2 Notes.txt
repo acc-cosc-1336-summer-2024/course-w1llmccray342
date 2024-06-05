@@ -1,0 +1,84 @@
+Constants are variables that cannot or should not be changed. 
+
+Python does not have builtin constants, PYthon recommends that we name our 
+constants as caps only. 
+
+constants are read only in other languages but not in PYTHON so we use
+a specific syntax to determine what is and isn't a named constant. 
+
+
+Boolean logic - 
+True/False
+
+George Boole (1815-1864)
+- Self-taught in mathematics
+- Helped support his family at 16
+- Opened his own school at 20
+- 1841 - Published papers on differential equations
+- 1847 - Published "The Mathematical Analysis of Logic, being an Essay towards
+a Calculus of Deductive Reasoning argued that logic could be applied to math."
+- 1847-1854 - Does the work on Boolean Logic
+- 1849 - Professor of Mathematics, Queen's College
+- 1854 - Published Laws of Thought
+       - This theory eventually led to the evolution of the modern age.
+
+ Boolean Logic - 
+ The idea that something could be on or something could be off or something could
+ be true or something could be false.
+
+ Truth tables  and logic operators.
+
+ AND
+ OR
+ NOT
+ NAND
+ NOR
+
+ AND
+ IF X True and Y True then the Result is True
+ If X True and Y False then the Result is False
+ IF X False and Y True then Result is False
+ IF X False and Y False then Result is False
+
+ OR
+ IF X True OR Y True then Result is True
+ IF X True or Y False then Result is True
+ IF X False or Y False then Result is True
+ IF X False or Y False then Result is False
+
+ Boolean expressions are variables that evaluate to true or false.
+AND Result = TRUE and TRUE and TRUE and TRUE AND False
+
+or
+Result = False OR False OR False OR False OR False...n or TRUE
+- True
+
+NOT True AND NOT True
+
+Order of operations is NOT AND OR 
+
+Determine if a Number is between 1 & 10
+
+1 > 0  and 1 < 11
+
+1 >= 1 and 1 <= 10 
+
+--
+0 <= 1 or 0 <= 10
+T or T = t
+
+5 <= 1 OR 5 <= 10
+F         T  = t
+
+5 <= 1 or 5 >= 10 
+False       False
+
+
+0 <= 1 OR 0 >= 10
+False       False
+
+11 <= 1 or 11 >= 10
+False           True
+
+
+
