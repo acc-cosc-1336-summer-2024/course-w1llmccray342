@@ -1,0 +1,19 @@
+Objectives:
+Testing and debuging programs and program modules to meet specifications and standards
+Implement programs that use data types and demonstrate an understanding of numbering
+Incorporate both basic and advanced control structures appropriately into algorithms
+
+Intro to Loops
+While Loops
+For Loops
+Running Loops
+
+
+While Loop Structure:
+While(Boolean):
+# As long as this expression is true or false whatever follows will execute
+
+Print(...)
+
+Some code that makes the loop stop (We can use a break statement or just set the variable being checked to false if it is set to true initally)
+

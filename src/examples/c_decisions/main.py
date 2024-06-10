@@ -1,10 +1,7 @@
 import decisions
 
-value1 = input("Enter a number here:")
-# Check if a value is a number
-# If number continue.
+value1 = input("Enter your birth year: ")
 
-result = decisions.is_number_in_range(int(value1), 1, 10)
-result2 = decisions.is_number_not_in_range(int(value1), 1, 10)
+result = decisions.get_generation(int(value1))
 
-print(result, result2)
+print(result)
