@@ -17,3 +17,9 @@ Print(...)
 
 Some code that makes the loop stop (We can use a break statement or just set the variable being checked to false if it is set to true initally)
 
+ while(i < number):
+        print(i + 1) # We are not changing the value of index.
+        # Statement that makes boolean expression false
+        i += 1
+
+num = 3
