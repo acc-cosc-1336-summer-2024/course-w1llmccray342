@@ -9,7 +9,6 @@ def display_number(number):
         print(i + 1) # We are not changing the value of index.
         # Statement that makes boolean expression false
         i += 1
-    print(f"display_number ran {i} times!")
 
 # Function to determine the sum of square values
 def sum_of_squares(num):
