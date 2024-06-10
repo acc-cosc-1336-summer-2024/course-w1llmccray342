@@ -23,3 +23,11 @@ Some code that makes the loop stop (We can use a break statement or just set the
         i += 1
 
 num = 3
+
+
+FOR Loops
+
+For val in range(1, num + 1) run the loop, that is the loop will run until the preset value is reached.
+
+Print(val)
+

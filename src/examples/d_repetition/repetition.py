@@ -19,4 +19,10 @@ def sum_of_squares(num):
     while(idx <= num):
         sum += idx * idx
         idx += 1
-    print(f"The sum of squares is {sum}")
+    print(sum)
+
+def for_display_number(num):
+
+    for val in range(1, num + 1):
+        print(val)
+    
