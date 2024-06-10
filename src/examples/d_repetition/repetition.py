@@ -22,6 +22,12 @@ def sum_of_squares(num):
 
 def for_display_number(num):
 
-    for val in range(1, num + 1):
-        print(val)
-    
+    for val in range(0, num + 1):
+        print(val+1)
+
+def for_sum_of_squares(num):
+    sum = 0
+
+    for val in range(0, num):
+        sum += (val + 1 ) * (val + 1)
+    return sum

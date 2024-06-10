@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.d_repetition.repetition import test_config, display_number, sum_of_squares
+from src.examples.d_repetition.repetition import test_config, display_number, sum_of_squares, for_sum_of_squares
 
 class Test_Config(unittest.TestCase):
 
@@ -18,3 +18,6 @@ class Test_Config(unittest.TestCase):
     
     def test_sum_of_squares_3(self):
         self.assertEqual(91, sum_of_squares(6))
+
+    def test_sum_of_squares_for(self):
+        self.assertEqual(14, for_sum_of_squares(3))
