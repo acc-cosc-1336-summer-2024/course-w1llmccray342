@@ -19,6 +19,7 @@ def sum_of_squares(num):
         sum += idx * idx
         idx += 1
     print(sum)
+    return sum
 
 def for_display_number(num):
 
