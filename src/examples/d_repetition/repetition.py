@@ -58,10 +58,20 @@ def while_multiplication_table(row, col):
 
         while (c < col):
             product = ((r + 1) * (c + 1))
-            print(str(product).rjust(3, " ", end = " " ))
+            print(str(product).rjust(3, " "), end = " ")
             c += 1
         
         r += 1
 
+        print(" ")
+
+def for_nested_multiplication_table(row, col):
+    
+    for r in range(0, row):
+
+        for c in range(0, col):
+            product = (r + 1) * (c * 1)
+            print(str(product).rjust(3, " "), end = " ")
+        
         print(" ")
     
