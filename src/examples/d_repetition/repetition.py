@@ -33,3 +33,19 @@ def for_sum_of_squares(num):
         sum += (val + 1 ) * (val + 1)
     print(sum)
     return sum
+
+
+def while_nested_loop_ex(num):
+    i =  0
+    
+    # While condition initally
+    while (i <= num):
+    # Waiting for inner loop
+        j = 0
+        print(f"Waiting for inner loop; waited {i} times")
+        
+        while (j <= num):
+            print(j)
+            i += 1
+        i += 1
+    
