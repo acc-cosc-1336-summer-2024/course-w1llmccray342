@@ -37,13 +37,10 @@ def for_sum_of_squares(num):
 
 def while_nested_loop_ex(num):
     i =  0
+    j = 0
     
-    # While condition initally
     while (i <= num):
-    # Waiting for inner loop
-        j = 0
         print(f"Waiting for inner loop; waited {i} times")
-        
         while (j <= num):
             print(j)
             j += 1
