@@ -31,4 +31,5 @@ def for_sum_of_squares(num):
 
     for val in range(0, num):
         sum += (val + 1 ) * (val + 1)
+    print(sum)
     return sum
