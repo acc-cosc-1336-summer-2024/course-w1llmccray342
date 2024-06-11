@@ -46,6 +46,6 @@ def while_nested_loop_ex(num):
         
         while (j <= num):
             print(j)
-            i += 1
+            j += 1
         i += 1
     
