@@ -34,3 +34,6 @@ Print(val)
 
 Nested loops: 
 Loops within a loop.
+
+
+Sentinel values are special values that can be used to stop a loop.

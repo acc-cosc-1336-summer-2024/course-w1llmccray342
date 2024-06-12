@@ -1,0 +1,26 @@
+Functions:
+
+A function helps us organize code and break it down into modules. The computer does not care, the coding structure is
+for eligibility.
+
+Easier to Test,
+Easier to Maintain,
+and Easier to Reuse
+
+Two types of functions:
+- A function that returns a values
+- A function that does not return a value, but returns void. Sometimes known as Fruitless functions.
+
+Functions are modular.
+
+- A function is like a black box, it takes a parameter (variable) as input and runs it against some code. 
+As a result it may or may not show an output.
+
+Value return functions are generally more used.
+
+Functions can have multiple variables within the function themselves.
+
+Local variables are those that exist only in their scope
+Global variables are variables that exist in the scope of the entire project.
+
+Stack memory:
