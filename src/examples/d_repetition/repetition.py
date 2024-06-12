@@ -74,4 +74,33 @@ def for_nested_multiplication_table(row, col):
             print(str(product).rjust(3, " "), end = " ")
         
         print(" ")
+
+
+def display_menu():
+        print("1 - Option 1")
+        print("2 - Option 2")
+        print("3 - Exit")
+
+def user_controlled_loop():
+
+        choice = 'Y'
+
+        while (option != 3):
     
+
+            option = input("Enter your menu option: ")
+            choice = input("Press Y to continue: ")
+    
+def handle_menu_option(option):
+     if(option == '1'):
+        option_1()
+     elif(option == '2'):
+        option_2()
+     elif(option == '3'):
+        print("Exiting...")
+
+def option_1():
+    print("User selected option 1")
+    
+def option_2():
+    print("User selected option 2")
