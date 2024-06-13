@@ -23,4 +23,6 @@ Functions can have multiple variables within the function themselves.
 Local variables are those that exist only in their scope
 Global variables are variables that exist in the scope of the entire project.
 
+Functions are used to help organize and reutilize our code.
+
 Stack memory:
