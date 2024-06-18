@@ -9,6 +9,7 @@ def get_factorial(num):
        # Factorial of 0 is always 1 so if num gets "0" as a value have it return 1
         if num == 0:
             factorial_count = 1
+            return factorial_count
             
         
         factorial_count *= num

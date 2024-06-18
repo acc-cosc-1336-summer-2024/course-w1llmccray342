@@ -11,7 +11,7 @@ class Test_Congfig(unittest.TestCase):
 
 
     def test_sum_odd_numbers(self):
-        self.assertEqual(16, sum_odd_numbers(6))
+        self.assertEqual(16, sum_odd_numbers(7))
         self.assertEqual(25, sum_odd_numbers(9))
         self.assertEqual(25, sum_odd_numbers(10))
         self.assertEqual(36, sum_odd_numbers(11))
