@@ -3,16 +3,10 @@ def test_config():
 
 def get_factorial(num):
 
-    factorial_count = 0
-
     for value in range (0, num, 1):
-       # Factorial of 0 is always 1 so if num gets "0" as a value have it return 1
-        if num == 0:
-            factorial_count = 1
-            
-        
-        factorial_count *= value
-        return factorial_count
+        value *= value
+        return value
+     
 
 
 def sum_odd_numbers(num):
