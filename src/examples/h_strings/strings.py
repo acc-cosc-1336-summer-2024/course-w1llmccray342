@@ -27,4 +27,9 @@ def loop_string_w_while():
         # Statement that eventually stops loop
         i += 1
 
+def loop_string_w_for():
+    lang = "Python"
+
+    for i in range(0, len(lang)):
+        print(lang[i])
 
