@@ -5,12 +5,8 @@ def get_factorial(num):
 
     factorial_total = 0
 
-    if num != 0:
-        for val in range (0, num):
-            factorial_total += num * val
-    else: 
-        factorial_total = 1
-    return factorial_total
+    for val in range(0, num):
+        factorial_total = factorial_total + val
 
 
      
