@@ -53,11 +53,11 @@ def handle_exit():
     user_continue_option = input("Would you like to continue? ")
 
     while user_continue_option == "Y" or "y":
-        
         handle_menu_options()
     
     else:
         print("Goodbye!")
+        return
 
 
 def main():
