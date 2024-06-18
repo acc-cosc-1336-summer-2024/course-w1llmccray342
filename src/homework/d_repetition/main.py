@@ -21,8 +21,6 @@ def handle_menu_options():
         handle_exit()
 
 
-
-
 def handle_factorials():
     still_in_loop = True
 
@@ -51,9 +49,13 @@ def handle_sum_odd_numbers():
 
 
 def handle_exit():
+
+    # Had to initialize this to get it to work
+    user_continue_option = "n"
+
     user_continue_option = input("Would you like to continue? ")
 
-    if user_continue_option != "Y" or user_continue_option != "y":
+    if user_continue_option == "Y" or user_continue_option == "y":
         handle_menu_options()
     else:
         print("Goodbye!")
