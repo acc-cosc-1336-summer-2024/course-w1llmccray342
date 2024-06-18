@@ -1,0 +1,85 @@
+Computer Memory & Strings:
+
+10. Implement programs using classes, including strings and files.
+
+Computer Memory:
+
+Anything has to be loaded onto memory.
+
+Random Access Memory - Volatile memory.
+Drivers - Anything that helps the OS talk to the computer.
+
+VS Code - A program that allows user to write code for multiple languages.
+ - Python - A high-level language that needs to be loaded onto memory.
+
+Secondary Storage Device - Internal hardware used to store program data.
+
+Code and Memory:
+
+Stack memory: Functions and variables(global/local) (Ordered Memory)
+Heap/free-store: lists
+Code
+Literal: "Nathan"
+Global memory.
+
+Stack has a ton of blocks that represent memory also known as a memory address.
+
+Stack memory and code:
+
+> def main(num1):
+    num2 = 5
+
+main(10)
+
+When this program runs: 
+1. A block of memory is created for the function.
+2. Memory addresses are allocated for the main function.
+3. The first block will hold the value 10 at x100.
+4. The second block will hold the value 5 at x96.
+5. The main block is removed from memory.
+
+Variables and Memory:
+- x represents some large number in the Computer's Domain.
+- num2 = 10 ~ main()
+
+8 bits represent 1 byte of computer memory.
+Integers are stored in 4 bytes of memory.
+
+A bit can be turned on and off.
+
+A bit that is on is added, represented by the number 1
+2^0 - 2^8
+
+
+String Memory:
+
+How are characters stored?
+- ASCII
+
+Char = 'a'
+
+Stack:
+
+1. a is loaded in at x100
+
+The value 97 can be represented in 1 byte of memory.
+
+
+Char in memory:
+def(main):
+> Lang = 'Python'
+
+1. Memory is allocated into stack and heap.
+2. Data for strings are held in free-store
+3. Stack has some memory.
+4. Stack needs to find the value for each character then references the memory address
+
+len(lang) = Gives length of the string.
+
+Everything is loaded onto memory.
+
+Bytes are represented from right to left.
+
+One address is an integer and one integer is a character.
+
+
