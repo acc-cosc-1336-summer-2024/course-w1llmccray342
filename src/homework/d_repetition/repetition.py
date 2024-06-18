@@ -21,8 +21,10 @@ def sum_odd_numbers(num):
     running_sum = 0
 
     # Determine if a number is odd or even using a loop
-    while (val % 1 == 0 and val <= num):
-        running_sum += val
-        val += 1
+    while (val < num):
+
+       if (val % 1 == 0):
+          running_sum += val
+       val += 1
     print(running_sum)
     
