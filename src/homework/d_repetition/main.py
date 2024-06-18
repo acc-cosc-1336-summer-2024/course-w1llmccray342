@@ -28,7 +28,7 @@ def handle_factorials():
         user_desired_number_fac = int(input("Please enter a number greater than 1 and less than 10: "))
         
         if (user_desired_number_fac > 1 and user_desired_number_fac < 10):
-            print(repetition.get_factorial(user_desired_number_fac))
+            repetition.get_factorial(user_desired_number_fac)
 
             still_in_loop = False
             handle_exit()
@@ -42,7 +42,7 @@ def handle_sum_odd_numbers():
         user_sum_odd_number = int(input("Please enter a number that is greater than 1 and less than 100: "))
 
         if (user_sum_odd_number > 1 and user_sum_odd_number < 100):
-           print(repetition.sum_odd_numbers(user_sum_odd_number))
+           repetition.sum_odd_numbers(user_sum_odd_number)
            still_in_loop = False
            handle_exit()
 
