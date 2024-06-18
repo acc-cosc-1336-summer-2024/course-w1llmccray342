@@ -8,7 +8,6 @@ def get_factorial(num):
         
     for i in range(0, num):
         product_factorial += product_factorial * i
-        print(product_factorial)
         
     return product_factorial
 
