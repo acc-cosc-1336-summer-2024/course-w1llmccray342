@@ -13,6 +13,7 @@ def get_factorial(num):
     
      if num == 0:
         factorial_total = 1
+        return factorial_total
      
 
      factorial_total *= value
