@@ -16,7 +16,7 @@ def get_factorial(num):
         return factorial_total
      
 
-     factorial_total *= value
+     factorial_total = value * factorial_total 
      return factorial_total
      
      
