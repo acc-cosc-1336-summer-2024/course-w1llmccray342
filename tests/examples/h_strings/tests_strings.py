@@ -17,3 +17,9 @@ class Test_Config(unittest.TestCase):
         self.assertEqual("o", lang[4])
         self.assertEqual("n", lang[5])
 
+    def test_len_of_string(self):
+        lang = "Python"
+
+        self.assertEqual(6, len(lang))
+        
+
