@@ -3,14 +3,16 @@ def test_config():
 
 def get_factorial(num):
 
-    # Start the total at 1 so we can move from here.
     factorial_total = 0
 
-    for value in range (0, num): 
+    if num != 0:
+        for val in range (0, num):
+            factorial_total += num * val
+    else: 
+        factorial_total = 1
+    return factorial_total
 
-     factorial_total += value * factorial_total 
-     return factorial_total
-     
+
      
 
 
