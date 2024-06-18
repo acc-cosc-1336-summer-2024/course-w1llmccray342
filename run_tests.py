@@ -8,7 +8,8 @@ has the test functions
 #from tests.examples.b_input_process_output import tests_input_process_output
 #from tests.homework.b_in_proc_out import tests_in_proc_out (Homework 1)
 #from tests.homework.c_decisions import tests_decisions # Homework 3
+#from tests.examples.h_strings import tests_strings (Lecture)
 
-from tests.examples.h_strings import tests_strings
-suite = unittest.TestLoader().loadTestsFromModule(tests_strings)
+from tests.homework.d_repetition import tests_repetition
+suite = unittest.TestLoader().loadTestsFromModule(tests_repetition)
 unittest.TextTestRunner(verbosity=2).run(suite)

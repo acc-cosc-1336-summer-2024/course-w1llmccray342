@@ -1,7 +1,6 @@
 import unittest
 
-from src.examples.h_strings.strings import test_config, access_chars_in_string
-
+from src.examples.h_strings.strings import test_config, access_chars_in_string, loop_string_w_for, loop_string_w_while
 class Test_Config(unittest.TestCase):
 
     def test_configuration(self):
@@ -21,5 +20,5 @@ class Test_Config(unittest.TestCase):
         lang = "Python"
 
         self.assertEqual(6, len(lang))
-        
+    
 
