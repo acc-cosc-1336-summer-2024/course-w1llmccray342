@@ -3,9 +3,17 @@ def test_config():
 
 def get_factorial(num):
 
-    for value in range (0, num, 1):
-        value *= value
-        return value
+    factorial_total = 0
+
+    for value in range (0, num):
+     
+     # Factorial of 0 is "1!"
+     if num == 0:
+        factorial_total = 1
+     
+     factorial_total *= value
+     return factorial_total
+     
      
 
 
