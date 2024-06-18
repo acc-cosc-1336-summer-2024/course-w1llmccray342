@@ -30,7 +30,8 @@ def handle_factorials():
         user_desired_number_fac = int(input("Please enter a number greater than 1 and less than 10: "))
         
         if (user_desired_number_fac > 1 and user_desired_number_fac < 10):
-            repetition.get_factorial(user_desired_number_fac)
+            print(repetition.get_factorial(user_desired_number_fac))
+
             still_in_loop = False
             handle_exit()
 
@@ -43,22 +44,22 @@ def handle_sum_odd_numbers():
         user_sum_odd_number = int(input("Please enter a number that is greater than 1 and less than 100: "))
 
         if (user_sum_odd_number > 1 and user_sum_odd_number < 100):
-            repetition.sum_odd_numbers(user_sum_odd_number)
-            still_in_loop = False
-            handle_exit()
+           print(repetition.sum_odd_numbers(user_sum_odd_number))
+           still_in_loop = False
+           handle_exit()
 
 
 
 def handle_exit():
     user_continue_option = input("Would you like to continue? ")
 
-    while user_continue_option == "Y" or "y":
+    if user_continue_option != "Y" or user_continue_option != "y":
         handle_menu_options()
-    
     else:
         print("Goodbye!")
         return
-
+        
+        
 
 def main():
     handle_menu_options()
