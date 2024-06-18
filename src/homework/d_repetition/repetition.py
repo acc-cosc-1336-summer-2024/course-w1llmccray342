@@ -9,11 +9,10 @@ def get_factorial(num):
        # Factorial of 0 is always 1 so if num gets "0" as a value have it return 1
         if num == 0:
             factorial_count = 1
-            print(factorial_count)
-            break
+            
         
         factorial_count *= num
-        print(factorial_count)
+        return factorial_count
 
 
 def sum_odd_numbers(num):
@@ -26,5 +25,5 @@ def sum_odd_numbers(num):
        if (val % 1 == 0):
           running_sum += val
        val += 1
-    print(running_sum)
+    return running_sum
     
