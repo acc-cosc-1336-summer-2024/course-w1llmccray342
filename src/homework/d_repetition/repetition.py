@@ -1,13 +1,18 @@
 def test_config():
     return True
 
+
 def get_factorial(num):
+        
+    product_factorial = 1
+        
+    for i in range(0, num):
+        product_factorial += product_factorial * i
+        print(product_factorial)
+        
+    return product_factorial
 
-    factorial_total = 0
-
-    for val in range(0, num):
-        factorial_total = factorial_total + val
-
+    
 
      
 
