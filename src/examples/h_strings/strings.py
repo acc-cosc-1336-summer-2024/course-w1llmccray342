@@ -6,7 +6,7 @@ def create_string():
     lang = "Python"
     print(lang)
 
-def access_chars_in_string(string):
+def access_chars_in_string():
     lang = "Python"
     print(lang[0])
     print(lang[-1])
