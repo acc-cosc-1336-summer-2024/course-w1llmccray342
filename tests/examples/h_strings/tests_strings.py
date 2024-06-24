@@ -63,3 +63,17 @@ class Test_Config(unittest.TestCase):
         str_strip = string.rstrip()
 
         self.assertEqual(True, "Python" == str_strip)
+
+    def test_find_in_string(self):
+        string = "Four score and seven years ago"
+        position = str.find("seven")
+
+        # We did find a value if position doesn't == -1
+        self.assertEqual(True, position != -1)
+
+    def test_replace_in_string(self):
+        string = "Four score and seven years ago"
+        new_str = string.replace('years', 'days')
+
+        self.assertEqual(True, 'Four score and seven days ago' == new_str)
+        

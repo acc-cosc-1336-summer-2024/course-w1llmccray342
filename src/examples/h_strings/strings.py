@@ -34,3 +34,9 @@ def loop_string_w_for():
         print(lang[i])
 
 # String methods.
+
+# String searching:
+
+
+# String replacing:
+
