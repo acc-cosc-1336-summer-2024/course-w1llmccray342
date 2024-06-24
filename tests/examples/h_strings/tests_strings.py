@@ -22,3 +22,9 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(6, len(lang))
     
 
+    def test_string_w_in(self):
+        lang = "Python"
+        result =  'th' in lang
+
+        self.assertEqual(True, result)
+        
