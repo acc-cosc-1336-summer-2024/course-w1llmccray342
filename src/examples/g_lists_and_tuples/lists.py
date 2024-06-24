@@ -27,5 +27,12 @@ def create_list():
     for i in range(0, len(nums)):
         print(nums[i])
 
+def loop_list_w_while():
+    nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    indx = 0
+
+    while(indx < nums[-1]):
+        print(nums[indx])
+        indx += 1
 
 
