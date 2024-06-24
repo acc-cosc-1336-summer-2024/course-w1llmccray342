@@ -66,7 +66,7 @@ class Test_Config(unittest.TestCase):
 
     def test_find_in_string(self):
         string = "Four score and seven years ago"
-        position = str.find("seven")
+        position = string.find("seven")
 
         # We did find a value if position doesn't == -1
         self.assertEqual(True, position != -1)
@@ -76,4 +76,4 @@ class Test_Config(unittest.TestCase):
         new_str = string.replace('years', 'days')
 
         self.assertEqual(True, 'Four score and seven days ago' == new_str)
-        
+
