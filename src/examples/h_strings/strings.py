@@ -33,10 +33,3 @@ def loop_string_w_for():
     for i in range(0, len(lang)):
         print(lang[i])
 
-# String methods.
-
-# String searching:
-
-
-# String replacing:
-
