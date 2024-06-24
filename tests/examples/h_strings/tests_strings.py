@@ -51,4 +51,15 @@ class Test_Config(unittest.TestCase):
         lang = "ABCDEFG"
 
         self.assertEqual(True, lang.isalpha())
-        
+    
+    def test_string_to_lower(self):
+        string = "PYTHON"
+        string_lower = string.lower()
+
+        self.assertEqual(True, "python" == string_lower)
+
+    def test_string_rstrip(self):
+        string = "Python"
+        str_strip = string.rstrip()
+
+        self.assertEqual(True, "Python" == str_strip)
