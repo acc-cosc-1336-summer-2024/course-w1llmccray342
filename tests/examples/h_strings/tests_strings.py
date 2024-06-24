@@ -35,4 +35,20 @@ class Test_Config(unittest.TestCase):
           lang = "Python"
 
           self.assertEqual(True, 'Th' not in lang)
+
+
+    def test_string_is_digit(self):
+        num = "1234"
+
+        self.assertEqual(True, num.isdigit())
           
+    def test_string_is_lower(self):
+        lang = "python"
+
+        self.assertEqual(True, lang.islower())
+
+    def test_string_is_alpha(self):
+        lang = "ABCDEFG"
+
+        self.assertEqual(True, lang.isalpha())
+        
