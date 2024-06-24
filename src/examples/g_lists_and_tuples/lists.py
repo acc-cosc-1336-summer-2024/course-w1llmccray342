@@ -20,6 +20,12 @@ def create_list():
 
     print(nums[0])
     print(nums[1])
+    print(len(nums))
 
+    print("Iterate w for loop")
     
+    for i in range(0, len(nums)):
+        print(nums[i])
+
+
 
