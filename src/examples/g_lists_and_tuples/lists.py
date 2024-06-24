@@ -35,4 +35,9 @@ def loop_list_w_while():
         print(nums[indx])
         indx += 1
 
+def use_different_data_types_in_a_list():
+    items = [1, 2.5, "fish", True, "python"]
 
+    # Iterate through list
+    for i in range(0, len(items)):
+        print(i)
