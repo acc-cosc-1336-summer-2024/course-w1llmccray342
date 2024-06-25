@@ -41,3 +41,14 @@ def use_different_data_types_in_a_list():
     # Iterate through list
     for i in items:
         print(i)
+
+def return_sum_of_items(self):
+    items = [1, 10, 5, 15, 25, 20]
+    sum_total = 0
+
+    for item in items:
+        sum_total += item
+
+    return sum_total
+
+

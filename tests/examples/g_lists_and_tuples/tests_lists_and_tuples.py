@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.g_lists_and_tuples.lists import test_config
+from src.examples.g_lists_and_tuples.lists import test_config, return_sum_of_items
 
 class Test_Config(unittest.TestCase):
 
@@ -57,5 +57,10 @@ class Test_Config(unittest.TestCase):
         list1[0] = 10
 
         self.assertEqual(False, list1 == list2)
+
+    def test_sum_items_in_list(self):
+        total = return_sum_of_items
+
+        self.assertEqual(76, total)
 
 
