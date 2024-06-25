@@ -37,3 +37,13 @@ class Test_Config(unittest.TestCase):
         nums = [2, 4, 6, 8, 10]
 
         self.assertEqual(3, nums.index(8))
+
+    def test_copy_list(self):
+        list1 = [1,2,3,4]
+        list2 = list1
+
+        list1[0] = 10
+
+        self.assertEqual(False, list1 == list2)
+        self.assertEqual(False, list2[0] == 10)
+        
