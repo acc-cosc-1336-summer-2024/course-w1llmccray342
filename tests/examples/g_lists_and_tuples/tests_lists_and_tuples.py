@@ -11,5 +11,10 @@ class Test_Config(unittest.TestCase):
         list = []
         list.append(10)
 
-        self.assertEqual(True, [10], list)
+        self.assertEqual(True, [10] == list)
+
+    def find_item_in_a_list(self):
+        list = [2, 4, 6, 8, 10]
+
+        self.assertEqual(True, )
 
