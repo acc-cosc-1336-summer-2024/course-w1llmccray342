@@ -59,7 +59,7 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(False, list1 == list2)
 
     def test_sum_items_in_list(self):
-        total = return_sum_of_items
+        total = return_sum_of_items()
 
         self.assertEqual(76, total)
 
