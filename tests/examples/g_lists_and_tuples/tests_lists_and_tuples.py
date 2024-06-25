@@ -26,3 +26,14 @@ class Test_Config(unittest.TestCase):
 
         self.assertEqual(True, 11 not in list_c)
 
+    def test_list_append(self):
+        nums = [2, 4, 6, 8, 10]
+        nums.append(4)
+
+        self.assertEqual(True, [2, 4, 6, 8, 10, 4] == nums)
+
+    def test_list_index(self):
+
+        nums = [2, 4, 6, 8, 10]
+
+        self.assertEqual(3, nums.index(8))
