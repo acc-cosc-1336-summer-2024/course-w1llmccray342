@@ -39,5 +39,5 @@ def use_different_data_types_in_a_list():
     items = [1, 2.5, "fish", True, "python"]
 
     # Iterate through list
-    for i in range(0, len(items)):
+    for i in items:
         print(i)
