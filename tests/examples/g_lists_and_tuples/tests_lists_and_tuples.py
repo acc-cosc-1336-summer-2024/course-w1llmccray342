@@ -44,6 +44,19 @@ class Test_Config(unittest.TestCase):
 
         list1[0] = 10
 
+        self.assertEqual(True, list1 == list2) # List1 and list2 are the same list in memory
+        self.assertEqual(True, list2[0] == 10)
+
+    def test_create_new_list(self):
+        list1 = [1,2,3,4]
+        list2 = []
+
+        for i in range(0, len(list1)):
+            list2.append(i)
+        
+        list1[0] = 10
+
         self.assertEqual(False, list1 == list2)
-        self.assertEqual(False, list2[0] == 10)
+        self.assertEqual(False, list2[0] != 10)
+
         
