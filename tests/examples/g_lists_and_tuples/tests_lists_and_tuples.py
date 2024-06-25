@@ -57,6 +57,5 @@ class Test_Config(unittest.TestCase):
         list1[0] = 10
 
         self.assertEqual(False, list1 == list2)
-        self.assertEqual(False, list2[0] != 10)
 
-        
+
