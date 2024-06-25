@@ -7,3 +7,9 @@ class Test_Config(unittest.TestCase):
     def test_configuration(self):
         self.assertEqual(True, test_config())
 
+    def create_empty_list(self):
+        list = []
+        list.append(10)
+
+        self.assertEqual(True, [10], list)
+
