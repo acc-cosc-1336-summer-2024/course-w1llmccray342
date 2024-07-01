@@ -48,14 +48,17 @@ def  get_dna_complement(dna):
 
     # Find each instance that A, G, T, C are called.
     for value in dna:
-        if value == "A":
+        if "A" in value:
             a_to_replace += 1
-        elif value == "G":
-            g_to_replace += 1
-        elif value == "T":
-            t_to_replace += 1
-        elif value == "C":
+     
+        elif "C" in value:
             c_to_replace += 1
+
+        elif "T" in value:
+            t_to_replace += 1
+
+        elif "G" in value:
+            g_to_replace += 1
         
     # Use the replace method on dna_complement
     replace_a = dna_complement.replace("A", "T", a_to_replace)
