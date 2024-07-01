@@ -39,16 +39,39 @@ def get_hamming_distance(dna1, dna2):
 
 def  get_dna_complement(dna):
    
-   comp_dna = ""
+   # In order to get this to work we have to take the data set and flip it.
+   # Then we flip the values in it.
+   # If we are finding the reverse complement then for ACCCGGTT we need to return AACCGGGT
 
-   for base in range(len(dna)):
-       comp_dna += base
+   # How many times does x occur in 
+   
+   count_a = 0
+   count_c = 0
+   count_t = 0
+   count_g = 0
+   
+   for value in dna:
+       if "T" in value:
+           count_t += 1
+       elif "A" in value:
+           count_a += 1
+       elif "C" in value:
+           count_c += 1
+       elif "G" in value:
+           count_g += 1
+   print(count_t, count_a, count_c, count_g)
+       
+
+       
+              
+       
+
 
 
     
     
     
 
-    # If we are finding the reverse complement then for ACCCGGTT we need to return AACCGGGT
+  
     # Grab values starting from negative indext
     
