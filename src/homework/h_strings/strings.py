@@ -11,9 +11,11 @@ def get_hamming_distance(dna1, dna2):
     
 
     for base in dna1:
-        if base in dna2 == dna1[i]:
-            hamming_distance += 1
-        i += 1
+        print(base)
+
+    for base in dna2:
+        print(base)    
+
     
     return hamming_distance
 
