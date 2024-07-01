@@ -60,10 +60,10 @@ def list_within_a_list():
 def multiplication_matrix(rows, cols):
     list = []
 
-    for i in range(1, rows):
+    for i in range(0, rows):
         row_list = []
 
-        for j in range(1, cols):
+        for j in range(0, cols):
             row_list.append((i+1) * (j + 1))
         
         list.append(row_list)
