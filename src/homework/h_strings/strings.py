@@ -38,35 +38,7 @@ def get_hamming_distance(dna1, dna2):
     return hamming_distance
 
 def  get_dna_complement(dna):
-    dna_complement = ""
-    count_a = 0
-    count_t = 0
-    count_c = 0
-    count_g = 0
-
-    for base in dna:
-        if base == "A":
-            count_a += 1
-        elif base == "T":
-            count_t += 1
-        elif base == "C":
-            count_c += 1
-        elif base == "G":
-            count_g += 1
-        dna_complement += base
-    print(count_a, count_t, count_c, count_g)
-    
-    #Using replace method we can replace values in dna complement.
-    replace_a = dna_complement.replace("A", "T", count_a)
-    replace_c = dna_complement.replace("G", "T", count_c)
-
-    dna_complement = replace_a + replace_c
-
-
-
-
-    print(dna_complement)
-    return dna_complement
+   pass
 
 
     
