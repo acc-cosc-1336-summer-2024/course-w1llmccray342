@@ -1,0 +1,3 @@
+Tuples are read only lists
+
+You can quickly iterate through a Tuple.
