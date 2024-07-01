@@ -53,7 +53,15 @@ def  get_dna_complement(dna):
             count_c += 1
         elif base == "G":
             count_g += 1
+        base += dna_complement
     print(count_a, count_t, count_c, count_g)
+    
+    #Using replace method we can replace values in dna complement.
+    replace_a = dna_complement.replace("A", "T", count_a)
+    replace_c = dna_complement.replace("G", "T", count_c)
+
+    dna_complement = replace_a + replace_c
+
 
 
 
