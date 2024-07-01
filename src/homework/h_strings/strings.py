@@ -3,16 +3,15 @@
 def get_hamming_distance(dna1, dna2):
     # Comparing two strings against each other
     # For each different letter in the comparative sequence we should store a value of 1
+    # Some way to make sure that DNA1 and DNA2 can't go above 1000 base pairs.
 
+    # Initialize a variable, hamming_distance
     hamming_distance = 0
     i = 0 
+    
 
-    # Iterate through each character in dna1
-    for char in dna1[i]:
-
-        # If char in dna1 matches the char in dna2
-        if char in dna1[i] == char in dna2[i]:
-            # Increment hamming distance + 1
+    for i in dna1:
+        if i in dna2:
             hamming_distance += 1
         i += 1
     
