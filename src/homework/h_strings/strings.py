@@ -37,10 +37,17 @@ def get_hamming_distance(dna1, dna2):
 
     return hamming_distance
 
-def  get_dna_complement(dna1, dna2):
+def  get_dna_complement(dna):
+    
+    dna_complement = ""
+    
+    for base in range(len(dna)):
+        dna_complement += base
 
-    pass
-    # String formed by reversing the symbols of dna1 and storing them into dna2
+    print(dna_complement)
+    return dna_complement
+
+    
 
 
 
