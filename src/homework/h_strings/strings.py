@@ -41,7 +41,7 @@ def  get_dna_complement(dna):
     dna_complement = ""
 
     for base in dna:
-        print(dna[base])
+        print(dna[base].index)
 
 
     print(dna_complement)
