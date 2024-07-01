@@ -10,7 +10,7 @@ def get_hamming_distance(dna1, dna2):
     i = 0 
     
     # Check each base across the length of the variable dna1
-    for base in dna1:
+    for base in range(len(dna1)):
 
         # Compare base of dna1 to dna2
         if dna1[base] != dna2[i]:
