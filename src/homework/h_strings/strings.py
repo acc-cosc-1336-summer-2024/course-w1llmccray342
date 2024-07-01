@@ -13,7 +13,7 @@ def get_hamming_distance(dna1, dna2):
     for base in range(len(dna1)):
 
         # Compare base of dna1 to dna2
-        if base == dna2[i]:
+        if base != dna2[i]:
             hamming_distance += 1
         i += 1
 
