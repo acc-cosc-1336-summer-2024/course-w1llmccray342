@@ -40,11 +40,40 @@ def get_hamming_distance(dna1, dna2):
 def  get_dna_complement(dna):
 
     dna_complement = ""
-    i = 0
-    
-    for base in dna:
-        print(base, base[i])
-        i += 1
 
+    a_to_replace = 0
+    g_to_replace = 0
+    t_to_replace = 0
+    c_to_replace = 0
 
+    # Find each instance that A, G, T, C are called.
+    for value in dna:
+        if value == "A":
+            a_to_replace += 1
+        elif value == "G":
+            g_to_replace += 1
+        elif value == "T":
+            t_to_replace += 1
+        elif value == "C":
+            c_to_replace += 1
+        
+    # Use the replace method on dna_complement
+    replace_a = dna_complement.replace("A", "T", a_to_replace)
+    replace_c = dna_complement.replace("C", "G", c_to_replace)
+    replace_t = dna_complement.replace("T", "A", t_to_replace)
+    replace_g = dna_complement.replace("G", "C", t_to_replace)
+
+    # Combine string.
+    dna_complement += replace_t + replace_g + replace_c + replace_a
+
+    print(dna_complement)
     return dna_complement
+
+
+    
+    
+    
+
+    # If we are finding the reverse complement then for ACCCGGTT we need to return AACCGGGT
+    # Grab values starting from negative indext
+    
