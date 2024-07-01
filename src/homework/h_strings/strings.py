@@ -10,8 +10,8 @@ def get_hamming_distance(dna1, dna2):
     i = 0 
     
 
-    for this in dna1[i]:
-        if this in dna2:
+    for base in dna1:
+        if base in dna2 == dna1[i]:
             hamming_distance += 1
         i += 1
     
