@@ -45,6 +45,8 @@ def  get_dna_complement(dna):
 
    # How many times does x occur in 
    
+   reverse_complement = ""
+
    count_a = 0
    count_c = 0
    count_t = 0
@@ -60,6 +62,15 @@ def  get_dna_complement(dna):
        elif "G" in value:
            count_g += 1
    print(count_t, count_a, count_c, count_g)
+
+   # We can shorten this.
+   reverse_complement = "A" * count_t + "C" * count_g + "G" * count_c + "T" * count_a
+
+   print(reverse_complement)
+
+   return reverse_complement
+
+   
        
 
        
