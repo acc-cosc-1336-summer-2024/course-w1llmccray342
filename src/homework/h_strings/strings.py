@@ -48,3 +48,5 @@ def  get_dna_complement(dna):
         print(base)
         i -= 1
     print(dna_complement)
+
+    return dna_complement
