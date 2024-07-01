@@ -66,7 +66,8 @@ def  get_dna_complement(dna):
     replace_t = dna_complement.replace("T", "A", t_to_replace)
     replace_g = dna_complement.replace("G", "C", t_to_replace)
 
-    # Combine string.
+    # Debug statement.
+    print(replace_a, replace_c, replace_t, replace_g)
     dna_complement += replace_t + replace_g + replace_c + replace_a
 
     print(dna_complement)
