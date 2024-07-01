@@ -16,4 +16,5 @@ class Test_Config(unittest.TestCase):
     def test_get_dna_complement(self):
         dna = "AAAACCCGGT"
         self.assertEqual("ACCGGGTTTT", get_dna_complement(dna))
+        self.assertEqual("GTCA", get_dna_complement("TGAC"))
     
