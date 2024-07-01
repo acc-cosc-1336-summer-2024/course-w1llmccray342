@@ -38,20 +38,13 @@ def get_hamming_distance(dna1, dna2):
     return hamming_distance
 
 def  get_dna_complement(dna):
-    
+
+    i = -1
     dna_complement = ""
-    i = -1 
     
-    for base in range(len(dna)):
-        dna_complement += dna[base]
-        dna_complement[base] = dna[i]
+    for base in dna:
+        base = dna[i]
+        dna_complement += base
+        print(base)
         i -= 1
-
     print(dna_complement)
-    return dna_complement
-
-    
-
-
-
-    
