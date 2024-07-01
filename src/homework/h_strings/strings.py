@@ -39,7 +39,7 @@ def get_hamming_distance(dna1, dna2):
 
 def  get_dna_complement(dna):
 
-    dna_complement = ""
+    dna_complement = dna
 
     a_to_replace = 0
     g_to_replace = 0
