@@ -42,13 +42,19 @@ def use_different_data_types_in_a_list():
     for i in items:
         print(i)
 
-def return_sum_of_items(self):
-    items = [1, 10, 5, 15, 25, 20]
-    sum_total = 0
+def return_sum_of_items(nums):
+    sum = 0
 
-    for item in items:
-        sum_total += item
+    for n in nums:
+        sum += n
 
-    return sum_total
+    return sum
+
+
+def list_within_a_list():
+    master_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    sub_list = master_list[0]
+
+    print(sub_list)
 
 
