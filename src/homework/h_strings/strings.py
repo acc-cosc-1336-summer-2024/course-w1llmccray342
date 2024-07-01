@@ -26,7 +26,6 @@ def get_hamming_distance(dna1, dna2):
     hamming_distance = 0
     i = 0 
 
-    check_if_valid(dna1, dna2)
     
     # Check each base across the length of the variable dna1
     for base in range(len(dna1)):
@@ -35,21 +34,11 @@ def get_hamming_distance(dna1, dna2):
         if dna1[base] != dna2[i]:
             hamming_distance += 1
         i += 1
-        print(hamming_distance)
-
-    return hamming_distance
-
-
-    
-    return hamming_distance
-
-
 
     return hamming_distance
 
 def  get_dna_complement(dna1, dna2):
 
-    check_if_valid(dna1, dna2)
     pass
     # String formed by reversing the symbols of dna1 and storing them into dna2
 
