@@ -7,8 +7,9 @@ def get_hamming_distance(dna1, dna2):
     hamming_distance = 0
 
     for char in dna1:
-        if char != dna2:
-            hamming_distance += 1
+        for char2 in dna2:
+            if char != char2:
+                hamming_distance += 1
 
     return hamming_distance
 
