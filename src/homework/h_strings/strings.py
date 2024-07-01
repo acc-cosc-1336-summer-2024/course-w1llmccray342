@@ -42,7 +42,7 @@ def  get_dna_complement(dna):
     dna_complement = ""
     
     for base in range(len(dna)):
-        dna_complement += base
+        dna_complement += dna[base]
 
     print(dna_complement)
     return dna_complement
