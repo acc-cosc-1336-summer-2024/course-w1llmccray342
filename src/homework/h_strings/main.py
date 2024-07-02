@@ -1,7 +1,7 @@
 import strings
 
 def keep_going():
-    continue_choice = input("Would you like to continue? ")
+    continue_choice = input("Would you like to continue? Y / N")
     continue_choice = continue_choice.upper()
 
     if continue_choice == "Y":
