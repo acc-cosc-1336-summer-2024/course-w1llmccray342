@@ -43,32 +43,21 @@ def  get_dna_complement(dna):
    # Then we flip the values in it.
    # If we are finding the reverse complement then for ACCCGGTT we need to return AACCGGGT
 
-   # How many times does x occur in 
-   
-   reverse_complement = ""
+  a_count = dna.count("A")
+  t_count = dna.count("T")
+  g_count = dna.count("G")
+  c_count = dna.count("C")
 
-   count_a = 0
-   count_c = 0
-   count_t = 0
-   count_g = 0
-   
-   for value in dna:
-       if "T" in value:
-           count_t += 1
-       elif "A" in value:
-           count_a += 1
-       elif "C" in value:
-           count_c += 1
-       elif "G" in value:
-           count_g += 1
-   print(count_t, count_a, count_c, count_g)
+  print(a_count, t_count, g_count, c_count)
 
-   # We can shorten this.
-   reverse_complement = "A" * count_t + "C" * count_g + "G" * count_c + "T" * count_a
 
-   print(reverse_complement)
 
-   return reverse_complement
+       
+           
+       
+
+       
+    
 
    
        
