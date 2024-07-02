@@ -47,19 +47,10 @@ def  get_dna_complement(dna):
 
   dna_complement = ""
 
-  a_count = dna.count("A")
-  t_count = dna.count("T")
-  g_count = dna.count("G")
-  c_count = dna.count("C")
-
-  print(a_count, t_count, g_count, c_count)
-  
   #Flip the DNA sequence
   dna_reverse = dna[::-1]
 
-  #Validate we have flipped the DNA sequence
-  print(dna_reverse)
-
+  #Iterate through each base in the reverse sequence, if a base is detected make sure to append its complement instead.
   for base in dna_reverse:
       if base == "A":
           dna_complement += "T"
@@ -69,7 +60,6 @@ def  get_dna_complement(dna):
           dna_complement += "C"
       elif base == "C":
           dna_complement += "G"
-  print(dna_complement)
   
   return dna_complement
           
