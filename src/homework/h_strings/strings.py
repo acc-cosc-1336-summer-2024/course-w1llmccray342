@@ -4,13 +4,13 @@
 def check_if_valid(dna1, dna2):
 
     if len(dna1) != len(dna2):
-        print("Invalid base pairs, Error")
+        print("Invalid sequence, Error")
     
     if len(dna1) < 0 or len(dna1) > 1000:
-        print("Invalid base pairs, Error")
+        print("Invalid sequence, Error")
 
     if len(dna2) < 0 or len(dna2) > 1000:
-        print("Invalid base pairs, Error")
+        print("Invalid sequence, Error")
     
     return False
 
