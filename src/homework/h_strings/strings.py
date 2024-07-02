@@ -68,7 +68,7 @@ def  get_dna_complement(dna):
       elif base == "G":
           dna_complement += "C"
       elif base == "C":
-          dna_complement == "G"
+          dna_complement += "G"
   print(dna_complement)
   
   return dna_complement
