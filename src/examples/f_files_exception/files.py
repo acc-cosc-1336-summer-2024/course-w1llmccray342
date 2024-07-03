@@ -55,3 +55,35 @@ def write_sales_data(file_name):
     file.write(num3 + '\n')
 
     file.close()
+
+def read_sales_data(file_name):
+    file = open(file_name, 'r')
+
+    num1 = file.readline().rstrip('\n')
+    num2 = file.readline().rstrip('\n')
+    num3 = file.readline().rstrip('\n')
+
+    total = num1 + num2 + num3
+
+    print(f"The total numbers are {num1}, {num2}, and {num3}")
+    print(f"The total is {total}")
+
+    file.close()
+
+def read_sales_data_w_while_loop(file_name):
+    file = open(file_name, 'r')
+
+    line = file.readline()
+
+    total = 0
+
+    while line != '':
+        amount = int(line)
+        total += amount
+        print(amount)
+
+        line = file.readline()
+
+    print(total)
+
+    file.close()
