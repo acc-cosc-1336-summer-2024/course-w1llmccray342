@@ -33,7 +33,14 @@ def read_from_file_one_line_at_a_time(file_name):
 
     print(line1, line2, line3)
 
+    file.close()
 
-def read_from_file_for_loop(file_name):
-    pass
+
+def append_to_file(file_name):
+    file = open(file_name, 'a')
+
+    file.write('Karl Marx\n')
+
+    file.close()
+
 
