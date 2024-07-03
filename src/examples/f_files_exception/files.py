@@ -80,7 +80,7 @@ def read_sales_data_w_while_loop(file_name):
     while line != '':
         amount = int(line)
         total += amount
-        print(amount)
+        print(amount, '\n')
 
         line = file.readline()
 
@@ -96,7 +96,7 @@ def read_sales_data_w_f_loop(file_name):
     for line in file:
        amt = int(line)
        total += amt
-       print(amt)
+       print(amt, '\n')
 
     print(total)
     
