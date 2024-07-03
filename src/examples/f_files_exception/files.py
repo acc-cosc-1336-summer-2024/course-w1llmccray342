@@ -6,5 +6,11 @@ def open_file(file_name):
 
     file.close()
 
-def write_to_file(param):
-    pass
+def write_to_file(file_name):
+    file = open(file_name, 'w')
+
+    file.write('John Lock\n')
+    file.write('David Hume\n')
+    file.write('Edmund Burke\n')
+
+    file.close()
