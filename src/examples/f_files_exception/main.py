@@ -1,4 +1,7 @@
 #main program
 import files
 
-files.open_file('Philosophers.txt')
+file_name = 'Philosophers.txt'
+
+files.open_file(file_name)
+files.write_to_file(file_name)
