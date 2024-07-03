@@ -1,9 +1,7 @@
 #main program
 import files
 
-file_name = 'Philosophers.txt'
+file_name = 'sales.txt'
 
 #files.open_file(file_name)
-
-files.read_from_file(file_name)
-files.read_from_file_one_line_at_a_time(file_name)
+files.write_sales_data(file_name)

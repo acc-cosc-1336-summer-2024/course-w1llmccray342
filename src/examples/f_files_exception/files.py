@@ -43,4 +43,15 @@ def append_to_file(file_name):
 
     file.close()
 
+def write_sales_data(file_name):
+    file = open(file_name, 'w')
 
+    num1 = input("Enter sales data: ")
+    num2 = input("Enter sales data: ")
+    num3 = input("Enter sales data: ")
+
+    file.write(num1 + '\n')
+    file.write(num2 + '\n')
+    file.write(num3 + '\n')
+
+    file.close()
