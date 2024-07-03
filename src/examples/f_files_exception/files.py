@@ -87,3 +87,17 @@ def read_sales_data_w_while_loop(file_name):
     print(total)
 
     file.close()
+
+def read_sales_data_w_f_loop(file_name):
+    file = open(file_name, 'r')
+
+    total = 0
+
+    for line in file:
+       amt = int(line)
+       total += amt
+       print(amt)
+
+    print(total)
+    
+    file.close()
