@@ -14,3 +14,12 @@ def write_to_file(file_name):
     file.write('Edmund Burke\n')
 
     file.close()
+
+def read_from_file(file_name):
+    file = open(file_name, 'r')
+
+    files_lines = file.read()
+
+    print(files_lines)
+
+    file.close()

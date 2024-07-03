@@ -9,11 +9,10 @@ has the test functions
 #from tests.homework.b_in_proc_out import tests_in_proc_out (Homework 1)
 #from tests.homework.c_decisions import tests_decisions # Homework 3
 #from tests.examples.h_strings import tests_strings (Lecture)
-
 #from tests.homework.d_repetition import tests_repetition (Homework 4)
 #from tests.examples.g_lists_and_tuples import tests_lists_and_tuples (Lecture)
-
 #from tests.homework.h_strings import tests_strings (HW5)
+
 
 from tests.examples.i_dictionaries_sets import tests_dictionaries_and_sets
 suite = unittest.TestLoader().loadTestsFromModule(tests_dictionaries_and_sets)
