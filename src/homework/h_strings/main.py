@@ -1,7 +1,7 @@
 import strings
 
 def keep_going():
-    continue_choice = input("Would you like to continue? Y / N")
+    continue_choice = input("Would you like to continue? Y / N ")
     continue_choice = continue_choice.upper()
 
     if continue_choice == "Y":
@@ -45,6 +45,7 @@ def main_menu():
 def user_options():
         
         main_menu()
+        
         my_choice = int(input("Please select which option you would like to access: "))
         
         if my_choice == 1:
