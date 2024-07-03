@@ -9,7 +9,7 @@ def open_file(file_name):
 def write_to_file(file_name):
     file = open(file_name, 'w')
 
-    file.write('John Lock\n')
+    file.write('John Locke\n')
     file.write('David Hume\n')
     file.write('Edmund Burke\n')
 
