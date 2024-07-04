@@ -142,9 +142,9 @@ def write_2d_list_to_file(file_name):
     for lang in my_program_lang_list:
         file.write(lang[0] + '\t')
         file.write(lang[1] + '\t')
-        file.write(lang[2] + '\t')
+        file.write(lang[2] + '\n')
 
     file.close()
-    
+
 
         

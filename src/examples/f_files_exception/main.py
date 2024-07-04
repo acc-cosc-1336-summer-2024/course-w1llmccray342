@@ -1,7 +1,7 @@
 #main program
 import files
 
-file_name = 'records.txt'
+file_name = 'langs.txt'
 
-#files.open_file(file_name)
-files.read_employee_records(file_name)
+
+files.write_2d_list_to_file
