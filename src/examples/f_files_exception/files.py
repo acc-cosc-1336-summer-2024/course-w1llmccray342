@@ -172,8 +172,8 @@ def write_dict_into_writing(file_name):
     dict_to_write = {"Fast": "Car", "Slow": "Bunny", "My": "Password", "Not": True}
 
     for key, value in dict_to_write.items():
-        file.write(key, "\t")
-        file.write(value, "\n")
+        file.write(key)
+        file.write(value)
     
     file.close()
 
