@@ -134,4 +134,17 @@ def read_employee_records(file_name):
 
     file.close()
 
+def write_2d_list_to_file(file_name):
+    file = open(file_name, 'w')
+
+    my_program_lang_list = [['C#', '2001', 'lang'], ['Python', '1996', 'lang'], ['Java', '1991', 'lang']]
+
+    for lang in my_program_lang_list:
+        file.write(lang[0] + '\t')
+        file.write(lang[1] + '\t')
+        file.write(lang[2] + '\t')
+
+    file.close()
+    
+
         
