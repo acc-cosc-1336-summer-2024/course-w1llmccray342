@@ -120,4 +120,18 @@ def write_employee_records(file_name):
 
     file.close()
 
+def read_employee_records(file_name):
+    file = open(file_name, 'r')
+
+    for line in file:
+        record = line.split('\t') # Creates a list in this format
+
+        id  = record[0]
+        name = record[1]
+        dept = record[2]
+
+        print(id, name, dept)
+
+    file.close()
+
         
