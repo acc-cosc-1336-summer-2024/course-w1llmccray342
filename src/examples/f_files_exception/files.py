@@ -84,7 +84,7 @@ def read_sales_data_w_while_loop(file_name):
 
         line = file.readline()
 
-    print(total)
+    print(total, '\n')
 
     file.close()
 
@@ -98,6 +98,26 @@ def read_sales_data_w_f_loop(file_name):
        total += amt
        print(amt, '\n')
 
-    print(total)
+    print(total, '\n')
     
     file.close()
+
+def write_employee_records(file_name):
+    file = open(file_name, 'w')
+
+    choice = 1
+
+    while choice == '1':
+        id = input('Enter id: ')
+        name = input('Enter name: ')
+        dept = input('Enter dept: ')
+
+        file.write(id + '\t')
+        file.write(name + '\t')
+        file.write(dept + '\n')
+
+        choice = int(input('Enter 1 to continue'))
+
+    file.close()
+
+        

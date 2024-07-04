@@ -1,11 +1,7 @@
 #main program
 import files
 
-file_name = 'sales.txt'
+file_name = 'records.txt'
 
 #files.open_file(file_name)
-files.write_sales_data(file_name)
-
-files.read_sales_data_w_while_loop(file_name)
-
-files.read_sales_data_w_f_loop(file_name)
+files.write_employee_records(file_name)
