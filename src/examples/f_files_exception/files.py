@@ -105,7 +105,7 @@ def read_sales_data_w_f_loop(file_name):
 def write_employee_records(file_name):
     file = open(file_name, 'w')
 
-    choice = 1
+    choice = '1'
 
     while choice == '1':
         id = input('Enter id: ')
