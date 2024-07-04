@@ -166,4 +166,17 @@ def read_prog_langs_records(file_name):
 
     file.close()
 
+def write_dict_into_writing(file_name):
+    file = open(file_name, 'w')
+
+    dict_to_write = {"Fast": "Car", "Slow": "Bunny", "My": "Password", "Not": True}
+
+    for key, value in dict_to_write.items():
+        file.write(key, "\t")
+        file.write(value, "\n")
+    
+    file.close()
+
+
+    
         
