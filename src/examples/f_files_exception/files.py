@@ -128,7 +128,7 @@ def read_employee_records(file_name):
 
         id  = record[0]
         name = record[1]
-        dept = record[2]
+        dept = record[2].rstrip('\n')
 
         print(id, name, dept)
 
