@@ -146,5 +146,24 @@ def write_2d_list_to_file(file_name):
 
     file.close()
 
+def read_prog_langs_records(file_name):
+    file = open(file_name, 'r')
+
+    list_langs = []
+
+    for line in file:
+        record = line.split('\t')
+        lang = record[0]
+        year = record[1]
+        cat = record[2].rstrip('\n')
+
+        employee = [lang, year, cat]
+
+        list_langs.append(employee)
+
+        for employee in list_langs:
+            print(employee[0], employee[1], employee[2])
+
+    file.close()
 
         
