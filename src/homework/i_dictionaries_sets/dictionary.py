@@ -47,10 +47,13 @@ def get_p_distance_matrix(parameter):
     # DNA 1 -> 4 on each string
     for dna_sequence in my_sequences:
         dna_sequence_list =[]
+
+        my_value = 0 
         
-        for dna_to_test in my_sequences:
-            my_p_distance = get_p_distance(dna_sequence, dna_to_test)
+        while my_value < len(my_sequences) and not my_value > len(my_sequences):
+            my_p_distance = get_p_distance(dna_sequence, my_sequences[my_value])
             dna_sequence_list.append(my_p_distance)
+            my_value += 1
             
         print(dna_sequence_list)
             
