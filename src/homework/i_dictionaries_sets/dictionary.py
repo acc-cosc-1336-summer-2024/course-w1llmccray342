@@ -49,6 +49,7 @@ def get_p_distance_matrix(parameter):
         dna_sequence_list =[]
 
         my_value = 0 
+        print(len(my_sequences))
         
         while my_value < len(my_sequences) and not my_value > len(my_sequences):
             my_p_distance = get_p_distance(dna_sequence, my_sequences[my_value])
