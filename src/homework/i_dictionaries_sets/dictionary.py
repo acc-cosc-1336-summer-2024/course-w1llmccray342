@@ -50,6 +50,7 @@ def get_p_distance_matrix(parameter):
         for i in parameter:
             p_distance = get_p_distance(dna_sequence, i)
             dna_sequence_list.append(p_distance)
+            print(i, dna_sequence)
             
         print(dna_sequence_list)
             
