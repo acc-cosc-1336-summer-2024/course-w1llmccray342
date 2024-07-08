@@ -14,9 +14,14 @@ def divide_two_numbers(num1, num2):
     return result 
 
 def multiply_two_numbers():
-    num1 = int(input("Enter num1: "))
-    num2 = int(input("Enter num2: "))
 
-    result = num1 * num2
+    try:
+        num1 = int(input("Enter num1: "))
+        num2 = int(input("Enter num2: "))
 
-    return result
+        result = num1 * num2
+        print(result)
+
+    except ValueError:
+        print("ERROR: Values must be numeric")
+    
