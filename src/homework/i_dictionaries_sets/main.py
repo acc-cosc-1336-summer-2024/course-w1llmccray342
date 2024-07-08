@@ -15,10 +15,32 @@ def process_exit():
         print("Goodbye!")
         return False
 
+# Function to grab the necessary values    
+def my_sequences():
+
+    number_of_sequences_to_create = int(input("Please type the number of sequences you would like to check: "))
+    number_of_bases =  int(input("Please enter the number of bases in each sequence: "))
+    my_sequences = []
+
+    for i in range(number_of_sequences_to_create):
+        # Grab a string of characters
+        my_sequence = input(f"Please enter {number_of_bases} bases for each sequence (current sequence {i}): ")
+        my_list_sequence = []
+        
+        for x in my_sequence:
+            my_list_sequence.append(x)
+
+        my_sequences.append(my_list_sequence)
+        print(my_sequences)
+    
+    return my_sequences
+
+
+
+
 def get_matrix():
-    my_sequences_to_test = list(input("Please write a list of strings you would like to check in the following order: [[X, Y, Z], [X, Y, Z], ...] \n"))
+    my_sequences_to_test = my_sequences()
     get_distance_mat = get_p_distance_matrix(my_sequences_to_test)
-    print(get_distance_mat)
     return get_distance_mat
 
 def handle_options():
