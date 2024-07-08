@@ -43,7 +43,7 @@ def get_matrix():
     get_distance_mat = get_p_distance_matrix(my_sequences_to_test)
     print("P Distance Matrix: \n")
     for i in get_distance_mat:
-        print(i, "\n")
+        print(i)
     return get_distance_mat
 
 def handle_options():
