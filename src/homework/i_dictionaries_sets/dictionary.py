@@ -11,16 +11,22 @@ def get_p_distance(list1, list2):
     hamming_distance = 0
     count = 0
 
-    for item in list1, list2:
-        if item in list1 != item in list2:
-            hamming_distance += 1
-        count += 0
-        print(hamming_distance, count)
-    
-    p_distance = hamming_distance / count
+    if list1 == len(list2):
 
-    return p_distance
-  
+        for item in list1:
+            if list1[item] != list2[item]:
+                hamming_distance += 1
+            count += 0
+            print(hamming_distance, count)
+    
+        p_distance = hamming_distance / count
+
+        return p_distance
+    
+    else:
+        print("Mismatch, ERROR")
+        return False
+    
 
 # For a general matrix distance function d on n taxa s1,s2,…,sn (taxa are often represented by genetic strings), 
 # we may encode the distances between pairs of taxa via a distance matrix D in which Di,j=d(si,sj).
