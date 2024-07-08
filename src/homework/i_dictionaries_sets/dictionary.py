@@ -46,11 +46,15 @@ def get_p_distance_matrix(parameter):
     # DNA 1 -> 4 on each string
     for dna_sequence in parameter:
         dna_sequence_list =[]
+
+        i = range(len(parameter))
+        my_loop = 0
         
-        for i in parameter:
+        while my_loop < i and not my_loop > i:
             p_distance = get_p_distance(dna_sequence, i)
             dna_sequence_list.append(p_distance)
-            print(i, dna_sequence)
+            print(type(i, dna_sequence))
+            my_loop += 1
             
         print(dna_sequence_list)
             
