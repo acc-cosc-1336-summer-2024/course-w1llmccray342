@@ -18,7 +18,6 @@ def get_p_distance(list1, list2):
             if item not in list2[count]:
                 hamming_distance += 1
             count += 1
-            print(hamming_distance, count)
     
         p_distance = hamming_distance / count
         
@@ -56,11 +55,9 @@ def get_p_distance_matrix(parameter):
             dna_sequence_list.append(my_p_distance)
             my_value += 1
             
-        print(dna_sequence_list)
         
         # Append function was originally out of FOR loop and was not being processed through correctly.
         p_distance_matrix.append(dna_sequence_list)
     
-    print(p_distance_matrix)
 
     return p_distance_matrix
