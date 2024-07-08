@@ -36,4 +36,14 @@ def multiply_two_numbers_using_loops():
     num2 = int(input("Enter num2: "))
 
     result = num1 * num2
-    print(result)    
+    print(result)
+
+def open_file_for_reading(file_name):
+    try: 
+        file = open(file_name, 'r')
+
+        contents = file.read()
+        file.close()
+        
+    except IOError:
+        print("Cannot read file, location not found")
