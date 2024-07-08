@@ -8,7 +8,6 @@ def get_options():
 def process_exit():
     user_inp = input("Press Y to continue... ")
     user_inp = user_inp.capitalize()
-    print(user_inp)
 
     if user_inp == "Y":
         return True
