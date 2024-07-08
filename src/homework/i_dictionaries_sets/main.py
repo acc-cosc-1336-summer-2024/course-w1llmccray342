@@ -7,7 +7,8 @@ def get_options():
     
 def process_exit():
     user_inp = input("Press Y to continue... ")
-    user_inp.capitalize()
+    user_inp = user_inp.capitalize()
+    print(user_inp)
 
     if user_inp == "Y":
         return True
@@ -48,7 +49,7 @@ def handle_options():
     
     keep_running = True
     
-    while keep_running: 
+    while keep_running == True: 
         get_options()
         my_choice = int(input("Please select what you would like to do: "))
         
