@@ -27,7 +27,7 @@ def my_sequences():
         my_sequence = input(f"Please enter {number_of_bases} bases for each sequence (current sequence {i + 1}): ")
         my_list_sequence = []
 
-        while len(my_sequence) != range(number_of_bases):
+        while len(my_sequence) != number_of_bases:
             print(f"Incorrect number of bases please enter {number_of_bases} bases!")
             my_sequence = input(f"Please enter {number_of_bases} bases for each sequence (current sequence {i + 1}): ")
 
