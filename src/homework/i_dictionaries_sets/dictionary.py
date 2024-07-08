@@ -42,19 +42,15 @@ def get_p_distance(list1, list2):
 # Take the first two indexes
 def get_p_distance_matrix(parameter):
     p_distance_matrix = []
+    my_sequences = parameter 
     # For the range of DNA strings compare each string to each index available
     # DNA 1 -> 4 on each string
-    for dna_sequence in parameter:
+    for dna_sequence in my_sequences:
         dna_sequence_list =[]
-
-        i = range(len(parameter))
-        my_loop = 0
         
-        while my_loop < i and not my_loop > i:
-            p_distance = get_p_distance(dna_sequence, i)
-            dna_sequence_list.append(p_distance)
-            print(type(i, dna_sequence))
-            my_loop += 1
+        for dna_to_test in my_sequences:
+            my_p_distance = get_p_distance(dna_sequence, dna_to_test)
+            dna_sequence_list.append(my_p_distance)
             
         print(dna_sequence_list)
             
