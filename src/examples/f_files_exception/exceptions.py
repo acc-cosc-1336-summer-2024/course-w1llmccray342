@@ -24,4 +24,16 @@ def multiply_two_numbers():
 
     except ValueError:
         print("ERROR: Values must be numeric")
-    
+
+def multiply_two_numbers_using_loops():
+
+    num1 = ''
+        
+    while not num1.isdigit():
+        num1 = input("Please enter digits.. Enter num1: ")
+        
+    num1 = int(input("Enter num1: "))
+    num2 = int(input("Enter num2: "))
+
+    result = num1 * num2
+    print(result)    
