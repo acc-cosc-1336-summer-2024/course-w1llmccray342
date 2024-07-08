@@ -11,7 +11,7 @@ def get_p_distance(list1, list2):
     hamming_distance = 0
     count = 0
 
-    if list1 == len(list2):
+    if len(list1) == len(list2):
 
         for item in list1:
             if list1[item] != list2[item]:
