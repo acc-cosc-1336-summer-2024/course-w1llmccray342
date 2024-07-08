@@ -46,8 +46,9 @@ def get_p_distance_matrix(parameter):
     # DNA 1 -> 4 on each string
     for dna_sequence in parameter:
         dna_sequence_list =[]
-        for dna_string in parameter:
-            p_distance = get_p_distance(dna_sequence, dna_string)
+        
+        for i in parameter:
+            p_distance = get_p_distance(dna_sequence, i)
             dna_sequence_list.append(p_distance)
             
         print(dna_sequence_list)
