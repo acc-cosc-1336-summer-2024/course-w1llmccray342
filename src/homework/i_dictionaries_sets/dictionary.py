@@ -55,8 +55,8 @@ def get_p_distance_matrix(parameter):
             print(f"My DNA sequence is {dna_sequence}")
             print(f"My second DNA sequence to check is {my_sequences[my_value]}")
             my_p_distance = get_p_distance(my_sequences[my_value], dna_sequence)
+            print(f"My distance between {dna_sequence} and {my_sequences[my_value]} is {my_p_distance}")
             dna_sequence_list.append(my_p_distance)
-            my_value += 1
             
         print(dna_sequence_list)
             
