@@ -60,8 +60,8 @@ def get_p_distance_matrix(parameter):
             my_value += 1
             
         print(dna_sequence_list)
-            
-    p_distance_matrix.append(dna_sequence_list)
+        p_distance_matrix.append(dna_sequence_list)
+    
     print(p_distance_matrix)
 
     return p_distance_matrix
