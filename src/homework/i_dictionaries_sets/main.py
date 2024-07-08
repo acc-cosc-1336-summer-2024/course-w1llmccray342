@@ -22,7 +22,7 @@ def get_matrix():
     return get_distance_mat
 
 def handle_options():
-    my_choice = input(int("Please select what you would like to do: "))
+    my_choice = int(input("Please select what you would like to do: "))
     keep_running = True
     
     while keep_running: 
