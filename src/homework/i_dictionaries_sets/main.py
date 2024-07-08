@@ -46,7 +46,7 @@ def my_sequences():
 def get_matrix():
     my_sequences_to_test = my_sequences()
     get_distance_mat = get_p_distance_matrix(my_sequences_to_test)
-    print("P Distance Matrix: \n")
+    print("P Distance Matrix: ")
     for i in get_distance_mat:
         print(i)
     return get_distance_mat

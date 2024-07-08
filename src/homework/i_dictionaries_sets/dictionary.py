@@ -21,7 +21,6 @@ def get_p_distance(list1, list2):
     
         p_distance = hamming_distance / count
         
-        print(f"P Distance is {p_distance}")
         return p_distance
 
     
