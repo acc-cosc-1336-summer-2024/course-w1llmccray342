@@ -1,8 +1,6 @@
-#main program
-import files
+import exception
 
-file_name = 'langs_new.txt'
+result = exception.divide_two_numbers(2, 4)
 
-
-# files.write_2d_list_to_file(file_name)
-files.write_dict_into_writing(file_name)
+if (result != "No integer is divisible by 0; ERROR"):
+    print(result)
