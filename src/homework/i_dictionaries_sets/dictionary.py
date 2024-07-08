@@ -1,4 +1,3 @@
-from sets import get_hamming_distance, get_hamming_distance_from_list
 
 # For two strings s1 and s2 of equal length, the p-distance between them, 
 # denoted dp(s1,s2), is the proportion of corresponding symbols that differ between s1 and s2.
