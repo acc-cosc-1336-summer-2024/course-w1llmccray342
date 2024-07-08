@@ -14,6 +14,7 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(.4, get_p_distance(list1, list2))
         self.assertEqual(0.0, get_p_distance(list3, list3))
         self.assertEqual(0.1, get_p_distance(list3, list5))
+        self.assertEqual(0.3, get_p_distance(list4, list6))
 
     def test_get_p_distance_matrix(self):
         my_val = [
