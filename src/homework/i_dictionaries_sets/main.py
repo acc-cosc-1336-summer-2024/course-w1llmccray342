@@ -22,14 +22,17 @@ def get_matrix():
     return get_distance_mat
 
 def handle_options():
-    my_choice = int(input("Please select what you would like to do: "))
+    
     keep_running = True
     
     while keep_running: 
         get_options()
+        my_choice = int(input("Please select what you would like to do: "))
+        
         if my_choice == 1:
             get_matrix()
             keep_running = process_exit()
+            
             
         elif my_choice == 2:
            keep_running =  process_exit()
