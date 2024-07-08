@@ -6,7 +6,14 @@ class Test_Config(unittest.TestCase):
     def test_get_p_distance(self):
         list1 = ['T','T','T','C','C','A','T','T','T','A']
         list2 = ['G','A','T','T','C','A','T','T','T','C']
+
+        list3 = ['T','T','T','C','C','A','T','T','T','A']
+        list4 = ['G','A','T','T','C','A','T','T','T','C']
+        list5 = ['T','T','T','C','C','A','T','T','T','T']
+        list6 = ['G','T','T','C','C','A','T','T','T','A']
         self.assertEqual(.4, get_p_distance(list1, list2))
+        self.assertEqual(0.0, get_p_distance(list3, list3))
+        self.assertEqual(0.1, get_p_distance(list3, list5))
 
     def test_get_p_distance_matrix(self):
         my_val = [
