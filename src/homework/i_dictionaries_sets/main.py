@@ -24,14 +24,19 @@ def my_sequences():
 
     for i in range(number_of_sequences_to_create):
         # Grab a string of characters
-        my_sequence = input(f"Please enter {number_of_bases} bases for each sequence (current sequence {i + 1}): ")
-        my_list_sequence = []
-        
-        for x in my_sequence:
-            my_list_sequence.append(x)
+
+        if not len(my_sequence) == range(number_of_bases):
+            print(f"Incorrect number of bases please enter {number_of_bases} bases!")
+            my_sequence = input(f"Please enter {number_of_bases} bases for each sequence (current sequence {i + 1}): ")
+            my_list_sequence = []
+
+            # Logic check to make sure that my_sequence is 
+            
+            for x in my_sequence:
+                my_list_sequence.append(x)
 
         my_sequences.append(my_list_sequence)
-        print(my_sequences)
+        print(f"Current sequences: {my_sequences}")
     
     return my_sequences
 
