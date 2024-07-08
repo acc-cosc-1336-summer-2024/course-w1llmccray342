@@ -41,7 +41,9 @@ def my_sequences():
 def get_matrix():
     my_sequences_to_test = my_sequences()
     get_distance_mat = get_p_distance_matrix(my_sequences_to_test)
-    print(get_distance_mat)
+    print("P Distance Matrix: \n")
+    for i in get_distance_mat:
+        print(i, "\n")
     return get_distance_mat
 
 def handle_options():
@@ -59,8 +61,6 @@ def handle_options():
             
         elif my_choice == 2:
            keep_running =  process_exit()
-
-        
 
 
 
