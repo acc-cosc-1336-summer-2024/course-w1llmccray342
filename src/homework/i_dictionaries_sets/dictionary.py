@@ -38,5 +38,19 @@ def get_p_distance(list1, list2):
 # in FASTA format.
 # Return: The matrix D corresponding to the p-distance dp on the given strings. 
 # As always, note that your answer is allowed an absolute error of 0.001.
-def get_p_distance_matrix(list1):
-    pass
+
+# Take the first two indexes
+def get_p_distance_matrix(parameter):
+    p_distance_matrix = []
+    # For the range of DNA strings compare each string to each index available
+    # DNA 1 -> 4 on each string
+    for dna_sequence in parameter:
+        dna_sequence_list =[]
+        for dna_string in parameter:
+            p_distance = get_p_distance(dna_sequence, dna_string)
+            dna_sequence_list.append(p_distance)
+            
+        print(dna_sequence_list)
+            
+    p_distance_matrix.append(dna_sequence_list)
+    print(p_distance_matrix)
