@@ -24,7 +24,7 @@ def my_sequences():
 
     for i in range(number_of_sequences_to_create):
         # Grab a string of characters
-        my_sequence = input(f"Please enter {number_of_bases} bases for each sequence (current sequence {i}): ")
+        my_sequence = input(f"Please enter {number_of_bases} bases for each sequence (current sequence {i + 1}): ")
         my_list_sequence = []
         
         for x in my_sequence:
@@ -41,6 +41,7 @@ def my_sequences():
 def get_matrix():
     my_sequences_to_test = my_sequences()
     get_distance_mat = get_p_distance_matrix(my_sequences_to_test)
+    print(get_distance_mat)
     return get_distance_mat
 
 def handle_options():
