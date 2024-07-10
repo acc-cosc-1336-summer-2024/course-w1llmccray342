@@ -6,4 +6,4 @@ choice = 1
 
 while choice == 1:
     display_survey_question()
-choice = int(input("Enter another survey: "))
+    choice = int(input("Enter another survey: "))
