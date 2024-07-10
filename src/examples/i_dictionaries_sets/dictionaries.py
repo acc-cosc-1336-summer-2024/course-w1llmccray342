@@ -16,7 +16,7 @@ capture_survey_responses = [] # surveyid, questionid, responseid
 
 def display_survey_question():
     survey_id = 1
-    
+
     for question_id, question in survey_questions_dictionary.items():
         print(question)
 
@@ -30,6 +30,6 @@ def display_survey_question():
         print(capture_survey_response)
 
 def capture_survey_response(survey_id, question_id, response):
-    capture_survey_response.append([survey_id, question_id, response])
+    capture_survey_responses.append([survey_id, question_id, response])
 
 
