@@ -44,6 +44,25 @@ def open_file_for_reading(file_name):
 
         contents = file.read()
         file.close()
-        
+
     except IOError:
         print("Cannot read file, location not found")
+
+def open_sales_file_for_reading(sales_file_name):
+    
+    try:
+        
+        file = open(sales_file_name, 'r')
+        
+        total = 0 
+
+        for line in file:
+            amount = int(line)
+            total += amount
+
+        file.close()
+    
+    except ValueError:
+        print("File contains invalid data") # For the enduser display this
+        # Save error contents to error log
+
