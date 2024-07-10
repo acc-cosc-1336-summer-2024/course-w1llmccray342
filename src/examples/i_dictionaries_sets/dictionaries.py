@@ -54,5 +54,14 @@ def tabulate_survey_response_results():
 
     print(survey_response_results)
 
+def get_course_average():
+    total_avg = 0
+    total = 0
+
+    for question_id, average in survey_response_options.items():
+        total += average
     
+    total_avg = total / len(survey_response_results)
+
+    return total_avg
 
