@@ -39,10 +39,12 @@ def capture_survey(survey_id, question_id, response):
 def tabulate_survey_response_results():
     
     cnt = 1
-
+    
     for response in capture_survey_responses:
         survey_response_results_totals[response[1]] += response[2]
-        cnt += 1
+        
+        if "2.5" == response[1]:
+            cnt += 1
 
     print(survey_response_results_totals)
 
