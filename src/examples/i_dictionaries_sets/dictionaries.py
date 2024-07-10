@@ -12,9 +12,11 @@ survey_questions_dictionary =  \
 
 survey_response_options = {1: "Never", 2:"Sometimes", 3:"More", 4: "More more", 5: "Always", 6: "Always Always"}
 capture_survey_responses = [] # surveyid, questionid, responseid
-survey_id = 1
+
 
 def display_survey_question():
+    survey_id = 1
+    
     for question_id, question in survey_questions_dictionary.items():
         print(question)
 
