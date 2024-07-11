@@ -46,10 +46,8 @@ def tabulate_survey_response_results():
         if "2.5" == response[1]:
             cnt += 1
 
-    print(survey_response_results_totals)
 
     for question_id, totals in survey_response_results_totals.items():
-        print(totals, cnt)
         survey_response_results[question_id] = totals / cnt
 
     print(survey_response_results)
@@ -59,9 +57,23 @@ def get_course_average():
     total = 0
 
     for question_id, average in survey_response_options.items():
-        total += average
+        total += int(average)
     
     total_avg = total / len(survey_response_results)
 
     return total_avg
+
+def get_faculty_rating(ratio):
+    if (ratio <= 6 and ratio >= 5.5):
+        return "Excellent"
+    elif (ratio >= 5):
+        return "Very Good"
+    elif (ratio >= 4):
+        return "Good"
+    elif (ratio >= 3):
+        return "Needs Improvement"
+    elif (ratio <= 3):
+        return "Unacceptable"
+    else:
+        return "Invalid Number."
 
