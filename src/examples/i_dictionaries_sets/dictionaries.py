@@ -80,3 +80,33 @@ def get_faculty_rating(ratio):
     else:
         return "Invalid Number."
 
+
+def display_menu():
+    while option != 3:
+        print("1 - Enter survey responses: ")
+        print("2 - Get survey results: ")
+        print("3 - Exit")
+        option = int(input("Enter option: "))
+        handle_menu_options(option)
+
+def handle_menu_options(option):
+    if(option == 1):
+        my_option = 1
+       
+        while my_option == 1:
+            display_survey_question()
+            my_option = input("Would you like to enter another survey? Y/N").upper
+            
+            if my_option == "Y":
+                my_option == 1
+    
+    
+    elif(option == 2):
+        tabulate_survey_response_results()
+        average = get_course_average()
+        professor_rating = get_faculty_rating(average)
+        print(f"The professor's average is... {average}")
+        print(f"The professor's rating is {professor_rating}")
+    
+    elif(option == 3):
+        print("Goodbye!")
