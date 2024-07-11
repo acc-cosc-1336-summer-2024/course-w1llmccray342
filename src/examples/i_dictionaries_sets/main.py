@@ -1,4 +1,4 @@
 from dictionaries import *
 
-handle_menu_options()
+display_menu()
 
