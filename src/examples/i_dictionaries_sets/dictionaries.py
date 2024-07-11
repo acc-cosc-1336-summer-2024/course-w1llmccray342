@@ -27,7 +27,10 @@ def display_survey_question():
         for option, value in survey_response_options.items():
             print(option, value)
 
-        response = input("Enter option: ")
+        response = 0 
+
+        while response < 1 or response > 6 or response.isdigit():
+            response = int(input("Enter option: (1-6)"))
 
         capture_survey(survey_id, question_id, int(response))
         survey_id += 1
@@ -57,7 +60,7 @@ def get_course_average():
     total = 0
 
     for question_id, average in survey_response_options.items():
-        total += int(average)
+        total += average
     
     total_avg = total / len(survey_response_results)
 
