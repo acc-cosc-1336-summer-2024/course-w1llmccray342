@@ -13,6 +13,4 @@ class Die:
     def __str__(roll):
         return f"The rolled value is {roll}"
     
-    def __roll_value():
-        pass
     
