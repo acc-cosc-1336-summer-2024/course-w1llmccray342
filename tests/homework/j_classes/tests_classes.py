@@ -30,7 +30,7 @@ class Test_Config(unittest.TestCase):
             
             for my_dice in my_dice_to_test:
                 value_to_test = Die.get_rolled_value(my_dice)
-                self.assertEqual(my_dice, value_to_test == my_dice)
+                self.assertEqual(my_dice, value_to_test)
                 
 
 
