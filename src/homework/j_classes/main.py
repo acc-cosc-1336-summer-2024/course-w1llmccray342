@@ -14,8 +14,6 @@ def close_program():
         return True
         
 
-
-
 def handle_menu(menu):
     still_in_loop = True
 

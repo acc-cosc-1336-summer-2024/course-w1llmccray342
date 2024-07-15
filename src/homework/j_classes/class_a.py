@@ -11,6 +11,6 @@ class Die:
         return roll
     
     def __str__(self):
-        return f"The rolled value is {self.roll()}"
+        return f"The rolled value is {self.get_rolled_value()}"
     
     
