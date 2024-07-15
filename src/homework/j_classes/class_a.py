@@ -3,9 +3,9 @@ import random
 
 class Die:
     
-    def roll():
-        my_roll = random.randint(1, 6)
-        return my_roll
+    def roll(self):
+        self.__my_roll = random.randint(1, 6)
+        return self.__my_roll
     
     def get_rolled_value(roll):
         return roll
