@@ -26,22 +26,22 @@ def handle_menu(menu):
     while still_in_loop:
         user_input = 0
         
-        for key, values in menu.items():
-            print(f"{key}. {values}")
-        
-        # Check to see if user input is valid
-        while not user_input in [1, 2] or type(user_input) == type(int): 
+        try:
+                for key, values in menu.items():
+                    print(f"{key}. {values}")
+                
+                # Check to see if user input is valid
+                while not user_input in [1, 2] or type(user_input) == type(int): 
 
-            try:
-                user_input = int(input("Please select what you would like to do: \n"))
-                print(f"DEBUG: {type(user_input)} and {user_input} selected and compared against {int}")
+                        user_input = int(input("Please select what you would like to do: \n"))
             
                 if user_input not in [1, 2]:
                     print(f"Invalid option! User input must be in the designated range!")
             
-            except ValueError:
-                print("Input must be an integer to continue")
-                continue
+        except ValueError:
+            print("Input must be an integer to continue")
+            continue
+                
         
 
         if user_input == 1:
