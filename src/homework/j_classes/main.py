@@ -24,7 +24,7 @@ def handle_menu(menu):
     still_in_loop = True
 
     while still_in_loop:
-        user_input = 1
+        user_input = 0
         
         for key, values in menu.items():
             print(f"{key}. {values}")
