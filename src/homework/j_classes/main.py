@@ -29,7 +29,7 @@ def handle_menu(menu):
             print(f"{key}. {values}")
         
         # Check to see if user input is valid
-        while type(user_input) != int or user_input not in range(menu.items()): 
+        while type(user_input) != int or user_input not in [1, 2]: 
             user_input = int(input("Please select what you would like to do: \n"))
             print("Invalid option! User input must be a string value and in the designated range!")
         
