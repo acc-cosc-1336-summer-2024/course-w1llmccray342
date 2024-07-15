@@ -30,8 +30,8 @@ class Test_Config(unittest.TestCase):
             
             for my_dice in my_dice_to_test:
                 # Check that the rolled_value is in the range 1, 6
-                self.assertEqual(True, Die.get_rolled_value(my_dice) in range(1, 6))
-                self.assertEqual(False, Die.get_rolled_value(my_dice) in range(7, 99))
+                self.assertEqual(True, dice.get_rolled_value(my_dice) in range(1, 6))
+                self.assertEqual(False, dice.get_rolled_value(my_dice) in range(7, 99))
                 print(f"DEBUG: {my_dice} is in the Range of 1-6")
                 
                 
