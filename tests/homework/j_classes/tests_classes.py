@@ -5,6 +5,7 @@ from src.homework.j_classes.class_a import Die
 class Test_Config(unittest.TestCase):
         
     def test_Die_get_rolled_value(self):
+        dice_no = 0
         
         # Create three objects
         my_first_dice = Die()
