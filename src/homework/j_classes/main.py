@@ -30,10 +30,15 @@ def handle_menu(menu):
             print(f"{key}. {values}")
         
         # Check to see if user input is valid
-        while not user_input in [1, 2]: 
+        while not user_input in [1, 2] or type(user_input) == type(int): 
             user_input = int(input("Please select what you would like to do: \n"))
             print(f"DEBUG: {type(user_input)} and {user_input} selected")
-            print("Invalid option! User input must be a int value and in the designated range!")
+            
+            if user_input not in [1, 2]:
+                print(f"Invalid option! User input must be in the designated range!")
+            if type(user_input) != type(int):
+                print(f"Invalid option! User info MUST be type int to continue")
+
         
 
         if user_input == 1:
