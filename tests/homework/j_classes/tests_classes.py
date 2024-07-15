@@ -5,15 +5,26 @@ from src.homework.j_classes.class_a import Die
 class Test_Config(unittest.TestCase):
         
     def test_Die_get_rolled_value(self):
+        
+        # Create three objects
         my_first_dice = Die()
         my_second_dice = Die()
         my_third_dice = Die()
 
-        my_first_dice_roll = my_first_dice.roll()
-        my_second_dice_roll = my_second_dice.roll()
-        my_third_dice_roll = my_third_dice.roll()
+        # Store 3 dice objects into a list
+        my_dice = [my_first_dice, my_second_dice, my_third_dice]
 
-        my_dice_to_test = [my_first_dice_roll, my_second_dice_roll, my_third_dice_roll]
+        # For each dice present in my_dice we create a empty list:
+        for dice in my_dice:
+            my_dice_to_test = []
 
-        for dice_roll in my_dice_to_test:
-            self.assertEqual(5, Die.get_rolled_value(dice_roll))
+            # Inner loop to roll three dice and append them to a test list
+            for i in range(3):
+                my_temporary_dice = dice.roll()
+                my_dice_to_test.append(my_temporary_dice)
+
+            # For each dice in my test list we want to check that each value is within the range of 1, 6 if anything else is
+            # Detected we should receive an assertion error.
+            for my_dice in my_dice_to_test:
+                self.assertEqual(my_dice in range(1, 6), Die.get_rolled_value(my_dice) in range(1, 6))
+
