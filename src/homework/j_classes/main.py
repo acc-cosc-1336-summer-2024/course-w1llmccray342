@@ -10,7 +10,6 @@ def close_program():
 
     while not close_program in ["Y", "N"] or type(close_program) == type(str):
         close_program = input("Would you like to close the program? Y/N: \n").upper()
-        print(f"{type(close_program)} and {close_program} selected")
         
         if type(close_program) != str:
             print("Invalid option. Must be type string to continue!")
