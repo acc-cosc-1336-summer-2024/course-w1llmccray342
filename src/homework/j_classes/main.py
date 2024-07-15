@@ -9,11 +9,11 @@ def close_program():
 
     if close_program == "Y":
         print("Goodbye!")
-        still_in_loop = False
+        return False
     else:
-        still_in_loop = True
+        return True
+        
 
-    return still_in_loop
 
 
 def handle_menu(menu):
