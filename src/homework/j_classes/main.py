@@ -23,11 +23,13 @@ def handle_menu(menu):
         for key, values in menu.items():
             print(f"{key}. {values}")
 
-        user_input = int(input("Please select what you would like to do"))
+        user_input = int(input("Please select what you would like to do: \n"))
 
         if user_input == 1:
             my_dice = Die()
-            my_dice.roll()
+            my_dice_roll = my_dice.roll()
+            print(f"You rolled a... {my_dice_roll}")
+
         still_in_loop = close_program()
         
 def main():
