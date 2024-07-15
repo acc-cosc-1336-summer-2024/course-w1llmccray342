@@ -20,7 +20,6 @@ class Test_Config(unittest.TestCase):
 
             # Inner loop to roll three dice and append them to a test list
             for i in range(3):
-                print(f"Iteration #{i}")
                 my_temporary_dice = dice.roll()
                 my_dice_to_test.append(my_temporary_dice)
 
@@ -28,6 +27,7 @@ class Test_Config(unittest.TestCase):
             # Detected we should receive an assertion error.
             for my_dice in my_dice_to_test:
                 value_to_test = Die.get_rolled_value(my_dice)
+                print(f"Iteration #{i} of Dice {dice}")
                 self.assertEqual(my_dice in range(1, 6), value_to_test in range(1, 6))
                 print(f"DEBUG: {my_dice} is equal to {value_to_test}")
 
