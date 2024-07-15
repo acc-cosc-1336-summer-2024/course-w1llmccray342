@@ -15,6 +15,9 @@ def close_program():
         if type(close_program) != str:
             print("Invalid option. Must be type string to continue!")
 
+        if close_program not in ["Y", "N"]:
+            print("Invalid option. Must be Y/N to continue")
+
     if close_program == "Y":
         print("Goodbye!")
         return False
