@@ -15,7 +15,8 @@ has the test functions
 #from tests.examples.i_dictionaries_sets import tests_dictionaries_and_sets (Lecture)
 #from tests.homework.i_dictionaries_sets import tests_dictionaries_and_sets (HW6)
 #from tests.homework.i_dictionaries_sets import tests_dictionaries_and_sets
+#from tests.homework.j_classes import tests_classes # (HW7)
 
-from tests.homework.j_classes import tests_classes # HW 6
+from tests.examples.j_classes import tests_classes # Lecture.
 suite = unittest.TestLoader().loadTestsFromModule(tests_classes)
 unittest.TextTestRunner(verbosity=2).run(suite)
