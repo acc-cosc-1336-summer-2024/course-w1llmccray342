@@ -10,7 +10,7 @@ class Die:
     def get_rolled_value(roll):
         return roll
     
-    def __str__(roll):
-        return f"The rolled value is {roll}"
+    def __str__(self):
+        return f"The rolled value is {self.roll()}"
     
     
