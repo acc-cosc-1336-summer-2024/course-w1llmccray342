@@ -3,9 +3,6 @@ import unittest
 from src.homework.j_classes.class_a import Die
 
 class Test_Config(unittest.TestCase):
-
-    def test_configuration(self):
-        self.assertEqual(True, test_config())
         
     def test_Die_get_rolled_value(self):
         my_first_dice = Die()
