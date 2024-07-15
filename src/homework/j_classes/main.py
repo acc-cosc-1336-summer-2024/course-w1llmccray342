@@ -28,7 +28,7 @@ def handle_menu(menu):
         if user_input == 1:
             my_dice = Die()
             my_dice_roll = my_dice.roll()
-            print(f"You rolled a... {my_dice_roll}")
+            print(f"You rolled a... {my_dice.__str__()}")
 
         still_in_loop = close_program()
         
