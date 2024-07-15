@@ -28,5 +28,5 @@ class Test_Config(unittest.TestCase):
             for my_dice in my_dice_to_test:
                 value_to_test = Die.get_rolled_value(my_dice)
                 self.assertEqual(my_dice in range(1, 6), value_to_test in range(1, 6))
-                print(f"My dice {my_dice} is equal to {value_to_test}")
+                print(f"My dice object {dice} shows that {my_dice} is equal to {value_to_test}")
 
