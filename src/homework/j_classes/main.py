@@ -31,7 +31,7 @@ def handle_menu(menu):
         
         # Check to see if user input is valid
         while not user_input in [1, 2] or type(user_input) == type(int): 
-            user_input = int(input("Please select what you would like to do: \n"))
+            user_input = input("Please select what you would like to do: \n")
             print(f"DEBUG: {type(user_input)} and {user_input} selected and compared against {int}")
             
             if user_input not in [1, 2]:
