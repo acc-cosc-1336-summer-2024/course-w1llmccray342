@@ -25,11 +25,13 @@ class Test_Config(unittest.TestCase):
                 my_temporary_dice = dice.roll()
                 my_dice_to_test.append(my_temporary_dice)
 
+                for my_dice in my_dice_to_test:
+                    value_to_test = Die.get_rolled_value(my_dice)
+                    print(f"Iteration #{i} of Dice #{dice_no}")
+                    self.assertEqual(my_dice in range(1, 6), value_to_test in range(1, 6))
+                    print(f"DEBUG: {my_dice} is equal to {value_to_test}")
+
+
             # For each dice in my test list we want to check that each value is within the range of 1, 6 if anything else is
             # Detected we should receive an assertion error.
-            for my_dice in my_dice_to_test:
-                value_to_test = Die.get_rolled_value(my_dice)
-                print(f"Iteration #{i + 1} of Dice #{dice_no}")
-                self.assertEqual(my_dice in range(1, 6), value_to_test in range(1, 6))
-                print(f"DEBUG: {my_dice} is equal to {value_to_test}")
-
+      
