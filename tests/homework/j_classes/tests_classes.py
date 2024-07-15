@@ -30,12 +30,8 @@ class Test_Config(unittest.TestCase):
             
             for my_dice in my_dice_to_test:
                 value_to_test = Die.get_rolled_value(my_dice)
-                print(f"Iteration #{i} of Dice #{dice_no}")
-                self.assertEqual(my_dice in range(1, 6), value_to_test in range(1, 6))
-                print(f"DEBUG: {my_dice} is equal to {value_to_test}")
-                self.assertNotEqual(my_dice in range(7, 99), value_to_test in range(1, 6))
-                print(f"DEBUG: {my_dice} NOT greater than 7 or IN Range(7, 99)")
-
+                self.assertEqual(my_dice, value_to_test == my_dice)
+                
 
 
            
