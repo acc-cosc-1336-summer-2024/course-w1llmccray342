@@ -15,5 +15,5 @@ class Test_Config(unittest.TestCase):
 
         my_dice_to_test = [my_first_dice_roll, my_second_dice_roll, my_third_dice_roll]
 
-        for dice in my_dice_to_test:
-            self.assertIn(range(1, 6), Die.get_rolled_value(dice))
+        for dice_roll in my_dice_to_test:
+            self.assertEqual(5, Die.get_rolled_value(dice_roll))
