@@ -6,18 +6,15 @@ def create_menu():
 
 def close_program():
 
-    close_program = ""
+    user_close_program = ""
 
-    while not close_program in ["Y", "N"] or type(close_program) == type(str):
-        close_program = input("Would you like to close the program? Y/N: \n").upper()
-        
-        if type(close_program) != str:
-            print("Invalid option. Must be type string to continue!")
+    while not user_close_program in ["Y", "N"] or type(user_close_program) == type(str):
+        user_close_program = input("Would you like to close the program? Y/N: \n").upper()
 
-        if close_program not in ["Y", "N"]:
+        if user_close_program not in ["Y", "N"]:
             print("Invalid option. Must be Y/N to continue")
 
-    if close_program == "Y":
+    if user_close_program == "Y":
         print("Goodbye!")
         return False
     else:
