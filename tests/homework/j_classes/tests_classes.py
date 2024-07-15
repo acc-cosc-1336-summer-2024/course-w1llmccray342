@@ -26,5 +26,7 @@ class Test_Config(unittest.TestCase):
             # For each dice in my test list we want to check that each value is within the range of 1, 6 if anything else is
             # Detected we should receive an assertion error.
             for my_dice in my_dice_to_test:
-                self.assertEqual(my_dice in range(1, 6), Die.get_rolled_value(my_dice) in range(1, 6))
+                value_to_test = Die.get_rolled_value(my_dice)
+                self.assertEqual(my_dice in range(1, 6), value_to_test in range(1, 6))
+                print(f"My dice {my_dice} is equal to {value_to_test}")
 
