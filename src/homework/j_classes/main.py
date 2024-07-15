@@ -5,7 +5,7 @@ def create_menu():
     return menu
 
 def close_program():
-    close_program = input("Would you like to close the program? Y/N:").upper()
+    close_program = input("Would you like to close the program? Y/N: \n").upper()
 
     if close_program == "Y":
         print("Goodbye!")
