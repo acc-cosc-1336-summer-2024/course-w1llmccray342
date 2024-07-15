@@ -8,7 +8,7 @@ def close_program():
 
     close_program = ""
 
-    while type(close_program) != str or close_program not in ["Y", "N"]:
+    while close_program not in ["Y", "N"]:
         close_program = input("Would you like to close the program? Y/N: \n").upper()
         print(f"{type(close_program)} and {close_program} selected")
         print("Invalid option")
@@ -30,7 +30,7 @@ def handle_menu(menu):
             print(f"{key}. {values}")
         
         # Check to see if user input is valid
-        while type(user_input) != int or user_input not in [1, 2]: 
+        while user_input not in [1, 2]: 
             user_input = int(input("Please select what you would like to do: \n"))
             print(f"DEBUG: {type(user_input)} and {user_input} selected")
             print("Invalid option! User input must be a int value and in the designated range!")
