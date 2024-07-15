@@ -7,7 +7,7 @@ class Die:
         self.__my_roll = random.randint(1, 6)
         return self.__my_roll
     
-    def get_rolled_value(roll):
+    def get_rolled_value(self, roll):
         return roll
     
     def __str__(self):
