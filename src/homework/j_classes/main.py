@@ -36,7 +36,7 @@ def handle_menu(menu):
             
             if user_input not in [1, 2]:
                 print(f"Invalid option! User input must be in the designated range!")
-            if type(user_input) != type(int):
+            if type(user_input) != int:
                 print(f"Invalid option! User info MUST be type int to continue")
 
         
